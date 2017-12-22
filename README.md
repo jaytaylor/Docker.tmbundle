@@ -1,21 +1,34 @@
-# Docker.tmbundle
+# Dockerfile Syntax Highlighting for Sublime-Text 3
 
-Dockerfile syntax highlighting for TextMate and Sublime Text.
+Dockerfile syntax highlighting for Sublime Text.
+
+Includes support for gradle-based Dockerfile template syntax, e.g. `@someVar@`.
 
 ## Install
 
 ### Sublime Text
 
-Available for Sublime Text under [package control](https://sublime.wbond.net/packages/Dockerfile%20Syntax%20Highlighting).
-Search for *Dockerfile Syntax Highlighting*
+1. Press `cmd(⌘)-shift-p` and type "add repo".
 
-### TextMate 2
+!["add repository" screenshot](http://www.macdrifter.com/uploads/2012/08/Screen%20Shot%2020120801_222551.jpg)
 
-You can install this bundle in TextMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
+2. Then paste in the GitHub address for this package:
 
-enjoy.
+https://github.com/jaytaylor/Dockerfile.sublime-syntax
+
+!["paste repository URL" screenshot](https://user-images.githubusercontent.com/435652/34308432-360cfebe-e702-11e7-9444-215c4686e787.png)
+
+3. Press `cmd(⌘)-shift-p` and type "install".
+
+4. Enter "Dockerfile.sublime-syntax" and press enter.
+
+Now you're all set!  Enjoy!
 
 ### Changelog
+
+#### 1.3.1
+
+* Added support for gradle Dockerfile template syntax
 
 #### 1.3.0
 
