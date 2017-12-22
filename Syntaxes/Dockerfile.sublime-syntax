@@ -5,6 +5,7 @@ name: Dockerfile
 file_extensions:
   - Dockerfile
   - dockerfile
+  - Dockerfile.template
 first_line_match: ^\s*(?i:(from|arg))\s
 scope: source.dockerfile
 
@@ -14,7 +15,7 @@ variables:
     "{{onbuild_directive}}(?i:add|arg|env|expose|healthcheck|label|run|shell|stopsignal|user|volume|workdir)"
   nononbuild_commands_directive: (?i:maintainer)
   runtime_directive: "{{onbuild_directive}}(?i:cmd|entrypoint)"
-  from_directive: (?i:(from))\s+[^\s:@]+(?:[:@](\S+))?(?:\s+(?i:(as))\s+(\S+))?
+  from_directive: (?i:(from))\s+[^\s:]+(?:[:@](\S+))?(?:\s+(?i:(as))\s+(\S+))?
   copy_directive: ({{onbuild_directive}}(?i:copy))(?:\s+--from=(\S+))?
 
 contexts:
